@@ -1,0 +1,93 @@
+/* Основные цвета Minecraft */
+:root {
+  --mc-black: #1c1c21;
+  --mc-dark-gray: #474f52;
+  --mc-light-gray: #9aa1a1;
+  --mc-white: #f0f0f0;
+  --mc-red: #b02e26;
+  --mc-orange: #e77e23;
+  --mc-yellow: #f0c32f;
+  --mc-lime: #60bd68;
+  --mc-green: #3f704d;
+  --mc-light-blue: #3c44aa;
+  --mc-cyan: #169c9c;
+  --mc-blue: #253192;
+  --mc-purple: #7e3db5;
+  --mc-magenta: #a54ba7;
+  --mc-pink: #d98199;
+  --mc-brown: #835432;
+}
+
+/* Стиль для мониторинга сервера */
+.server-status {
+  background-color: var(--mc-black);
+  color: var(--mc-white);
+  font-family: 'Minecraftia', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.server-status .server-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.server-status .server-info .server-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.server-status .server-info .server-address {
+  font-size: 16px;
+  margin: 0;
+}
+
+.server-status .server-info .server-status-text {
+  font-size: 16px;
+  margin: 0;
+}
+
+.server-status .server-players {
+  margin-top: 20px;
+}
+
+.server-status .server-players .player-count {
+  background-color: var(--mc-dark-gray);
+  border-radius: 10px;
+  color: var(--mc-light-gray);
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.server-status .server-players .player-count span {
+  color: var(--mc-yellow);
+}
+
+.server-status .server-players .player-list {
+  margin-top: 10px;
+  overflow: auto;
+  max-height: 200px;
+}
+
+.server-status .server-players .player-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.server-status .server-players .player-list li {
+  border-bottom: 1px solid var(--mc-dark-gray);
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.server-status .server-players .player-list li:last-child {
+  border-bottom: none;
+}
